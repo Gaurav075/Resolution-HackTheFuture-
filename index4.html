@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose an Option</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+        <h1 class="res">Resolution</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">About Us</a></li>
+                <li><a href="index3.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>What would you like to do?</h2>
+        <div class="options-container">
+            <div class="option-card">
+                <div class="option-icon">
+                    <i class="fas fa-recycle fa-3x"></i>
+                </div>
+                <h3 class="option-title">Sell Your Waste Products</h3>
+                <p class="option-description">Click here if you want to sell your waste products.</p>
+                <a href="#" class="option-btn" id="sellWasteOption">Get Started</a>
+            </div>
+            <div class="option-card">
+                <div class="option-icon">
+                    <i class="fas fa-shopping-cart fa-3x"></i>
+                </div>
+                <h3 class="option-title">Buy Finished Products</h3>
+                <p class="option-description">Click here if you want to buy finished products.</p>
+                <a href="#" class="option-btn" id="buyWasteOption">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Form for Selling Waste Products -->
+    
+    <div id="sellWastePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h3>Sell Your Waste Products</h3>
+            <form id="sellWasteForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="scheduleDate">Schedule Date:</label>
+                    <input type="date" id="scheduleDate" name="scheduleDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickupLocation">Pickup Location:</label>
+                    <input type="text" id="pickupLocation" name="pickupLocation" required>
+                </div>
+
+                <div id="materialsContainer">
+                    <label>Select Materials and Quantities:</label>
+                    <div class="material-entry">
+                        <select class="material-select" required>
+                            <option value="">--Select Material--</option>
+                            <option value="plastic">Plastic - ₹15 per kg</option>
+                            <option value="paper">Paper - ₹10 per kg</option>
+                            <option value="biomass">Biomass - ₹20 per kg</option>
+                            <option value="metal">Metal - ₹55 per kg</option>
+                            <option value="glass">Glass - ₹25 per kg</option>
+                        </select>
+                        <input type="number" class="material-quantity" placeholder="Quantity (kg)" min="1" required>
+                        <button type="button" class="remove-material">Remove</button>
+                    </div>
+                </div>
+
+                <button type="button" id="addMaterial">Add Another Material</button>
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Form for Buying Finished Products -->
+    <div id="buyWastePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeBuyPopup">&times;</span>
+            <h3>Buy Finished Products</h3>
+            <form id="buyWasteForm">
+                <div class="form-group">
+                    <label for="buyerName">Your Name:</label>
+                    <input type="text" id="buyerName" name="buyerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyerPhone">Phone Number:</label>
+                    <input type="tel" id="buyerPhone" name="buyerPhone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="buyerEmail">Email Address:</label>
+                    <input type="email" id="buyerEmail" name="buyerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="product">Select Product:</label>
+                    <select id="product" name="product" required>
+                        <option value="">--Select Product--</option>
+                        <option value="recycledPlastic">Recycled Plastic</option>
+                        <option value="recycledPaper">Recycled Paper</option>
+                        <option value="biomassFuel">Biomass Fuel</option>
+                        <option value="metalProducts">Metal Products</option>
+                        <option value="glassProducts">Glass Products</option>
+                    </select>
+                </div>
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Confirmation Popup -->
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeConfirmationPopup">&times;</span>
+            <h3>Submission Successful!</h3>
+            <p id="confirmationMessage"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+            </div>
+            <div class="copyright">
+                &copy; Resolution. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script3.js"></script>
+</body>
+</html>

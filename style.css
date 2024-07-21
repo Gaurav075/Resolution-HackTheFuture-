@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.res{
+    margin-left: -65%;
+}
+
+.eraser{
+    color: #151917;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+
+.paragraph-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f598;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h1 {
+    color: #007BFF;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 40px;
+    color: white;
+    padding: 20px;
+    /* border-radius: 8px; */
+    /* margin-bottom: 20px; */
+    gap: 10px;
+}
+  
+  .paragraph-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .paragraph-container {
+      padding: 15px;
+    }
+  
+    .paragraph-container p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .paragraph-container {
+      padding: 10px;
+    }
+  
+    .paragraph-container p {
+      font-size: 12px;
+    }
+  }
+
+.logo {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.pencil {
+    background-image: url("/assets/aws.jpg");
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.btn {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute; /* Add this line */
+    bottom: 200px; /* Adjust the value as needed */
+    right: 850px;
+    font-size: 1.5rem; /* Increase the font size */
+    padding: 25px 40px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.gallery {
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.faq-section {
+    margin: 40px 160px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+
+.foot-panel{
+    background-color: #0f1111;
+    color: white;
+    height: 90px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyright {
+    padding-top: 5px;
+}

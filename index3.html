@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+        <h1 class="res">Resolution</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">About Us</a></li>
+                <li><a href="index3.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <ul>
+                <li><strong>Email:</strong> customercare@resolutions.com</li>
+                <li><strong>Phone:</strong> (+91) 8957xxxxxx</li>
+                <li><strong>Address:</strong> G-60, G-Block,Pocket G,Sector 18,Noida,Uttar Pradesh 201301,India</li>
+            </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="confirmationMessage" class="confirmation-message"></div>
+    </div>
+    
+    <footer>
+        <div class="foot-panel">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+            </div>
+            <div class="copyright">
+                &copy; Resolution. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
